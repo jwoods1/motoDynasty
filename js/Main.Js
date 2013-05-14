@@ -5,6 +5,8 @@
     });
   });
  $( "#tabs" ).tabs( "enable" );
+$( "#tabs" ).tabs( "option", "heightStyle", "fill" );
+
    $(function() {
     var progressbar = $( "#progressbar" ),
       progressLabel = $( ".progress-label" );

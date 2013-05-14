@@ -145,7 +145,17 @@
           <li><a href="#">250mx</a></li>
         </ul>
         <div class="container" id="Seletion">
-       <label for="first">1st:</label>
+          <form>
+            <fieldset>
+              <input type="text" placeholder="Name…">
+              <label for="series">Select Series</label>
+              <select name="Series" id="series" class="required"data-native-menu="false">
+                <option data-placeholder="true">Select Series</option>
+                <option value="Boise">Boise</option>
+                <option value="SunValley">Sun Valley</option>
+              </select>
+
+              <label for="first">1st:</label>
                     <select name="first" id="first" class="required" data-native-menu="false" data-theme="b">
                         <option data-placeholder="true">1ST place</option>
                         <option value="villopoto">Villopoto</option>
@@ -271,7 +281,7 @@
                         <option value="short">Short</option>
                         <option value="weimer">Weimer</option>
                     </select>
-                    <div class="row">
+                   
                     <label for="tenth">10th:</label>
                     <select name="tenth" id="tenth" class="required" data-native-menu="false" data-theme="b">
                         <option data-placeholder="true">10th place</option>
@@ -286,12 +296,14 @@
                         <option value="short">Short</option>
                         <option value="weimer">Weimer</option>
                     </select>
-                    <label for="results1" id="results1">
-                     <div class="span3">
-                      <h3>1st:</h3><h4>Villipoto</h4>
+                    <div class="form-actions">
+                      <button type="submit" class="btn">Submit</button>
+                      <button type="button" class="btn" id="clearForm">Clear</button>
+                      <button type="button" class="btn" id="cancelForm">Clear</button>
                     </div>
-                    </div>
-                  </div>
+                </fieldset>
+              </form>
+                  
 </div>
 
 
