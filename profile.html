@@ -8,6 +8,7 @@
     <meta name="author" content="">
     
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assests/css/bootstrap-responsive.css">
     <link href="style.css" rel="stylesheet">
    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -66,7 +67,7 @@
                 <a href="profile.html">Profile</a>
               </li>
               <li class="">
-                <a href="series.html">Series</a>
+                <a href="series.html">My Series</a>
               </li>
               <li class="">
                 <a href="riders.html">Riders</a>
@@ -85,7 +86,9 @@
   
       <!-- Begin page content -->
       <div class="container">
-        <label>XP BAR Goes Here</label>
+        <div class="row">
+        <div class="span6"><p>Level 2</p></div><div class="span6" id="xp"><p>20,000<p></div>
+      </div>
        <div class="progress progress-striped active">
   <div class="bar" style="width: 40%;"></div>
 </div>
@@ -149,8 +152,9 @@
       </div>
       </div>
       </div>
-      </div>
-<div class="container" id="tabPanel">
+      
+
+  <div class="row" id="tabPanel" >
 <div id="tabs" class="span9">
   <ul>
     <li><a href="#tabs-1">Nunc tincidunt</a></li>
@@ -172,14 +176,18 @@
 </div>
 
 </div>
-<div class="container">
- <footer class="footer" id="footer">
-  <h3>All Rights Reserved</h3>
-</footer>
+
+
 </div>
 
  
 </div>
+ <div id="footer">
+      <div class="container">
+        <p class="muted credit">By Lyons Industries, LLC <a href="#"></a></p>
+        
+      </div>
+    </div>
 
 
 

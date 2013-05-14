@@ -2,7 +2,7 @@
 
 /*import bootstrap style sheet */
 
-@import url("assests/css/bootstrap-responsive.css");
+@import url("assets/css/bootstrap-responsive.css");
 @import url("assets/css/bootstrap.css");
 
 
@@ -106,5 +106,16 @@ All Pages
     #profileStats {
       text-align: left;
 
+    }
+    #xp{
+    	text-align: right;
+    }
+
+    #tabPanel{
+      margin-bottom: 30%;
+    	position:absolute;
+    	bottom:30%;
+    	top:60%;
+    	
     }
 
