@@ -1,0 +1,110 @@
+/* Custom Style page  */
+
+/*import bootstrap style sheet */
+
+@import url("assests/css/bootstrap-responsive.css");
+@import url("assets/css/bootstrap.css");
+
+
+/*Custom Css 
+All Pages
+*/
+ /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+       font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      
+      /* Wrapper for page content to push down footer */
+      #wrap {
+
+       font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+      div.meta {
+        display: block;
+      }
+      .span3 img{
+    	height: 250px;
+    	width: 250px;
+  	}
+  	#social{
+  		text-align: center;
+  	}
+
+
+/*Profile Page custom */
+  .ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  #mypic{
+    position:absolute;
+    right:3%;
+    left:72%;
+    bottom:40%;
+    top:20%;
+
+  }
+  .span3 img{
+    height: 250px;
+    width:250px
+    ;  }
+
+    #profileStats {
+      text-align: left;
+
+    }
+
