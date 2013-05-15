@@ -69,6 +69,7 @@ All Pages
       }
       div.meta {
         display: block;
+        text-align: center;
       }
       .span3 img{
     	height: 250px;
@@ -115,7 +116,7 @@ All Pages
       margin-bottom: 30%;
     	position:absolute;
     	bottom:30%;
-    	top:60%;
+    	top:64%;
     	
     }
 
