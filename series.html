@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-   
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link href="css/style.css" rel="stylesheet" >
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <!-- CSS -->
@@ -60,7 +61,7 @@
                 <a href="profile.html">Profile</a>
               </li>
               <li class="active">
-                <a href="series.html"><em>RACE</em></a>
+                <a href="series.html">Race</a>
               </li>
               <li class="">
                 <a href="riders.html">Riders</a>
@@ -95,19 +96,18 @@
 </div>
       <!-- Begin page content -->
       <div class="container">
-        <ul class="nav nav-tabs">
-          <li class="active">
-            <a href="#">450SX</a>
+        <ul class="nav nav-tabs" id="raceTabs">
+          <li>
+            <a href="#sx450" data-toggle="tab">450SX</a>
           </li>
-          <li id="twoFifty"><a href="#">250SX</a></li>
-          <li><a href="#">450MX</a></li>
-          <li><a href="#">250MX</a></li>
-          <li><a href="#">MXGP 450</a></li>
-          <li><a href="#">MXGP 250</a></li>
+          <li><a href="#sx250" data-toggle="tab">250SX</a></li>
+          <li><a href="#mx450" data-toggle="tab">450MX</a></li>
+          <li><a href="#sx250" data-toggle="tab">250MX</a></li>
+          <li><a href="#mxgp450" data-toggle="tab">MXGP 450</a></li>
+          <li><a href="#mxgp250" data-toggle="tab">MXGP 250</a></li>
         </ul>
-        <div class="container" id="Seletion">
-          <form>
-            <fieldset>
+        <div class="tab-content">
+          <div class"tab-pan active" id="sx450">
               <h4>Craig Lyons</h4>
               <label for="series">Select Series</label>
               <select name="Series" id="series" class="required"data-native-menu="false">
@@ -241,8 +241,26 @@
                       
                     </div>
                 </fieldset>
-              </form>
+              </div><!--sx450panel-->
+
+              <div class"tab-pan active" id="sx250">
+            <fieldset>
+              <h4>Craig Lyons</h4>
+              <label for="series">Select Series</label>
+              <select name="Series" id="series" class="required"data-native-menu="false">
+                <option data-placeholder="true">Select Series</option>
+                <option value="Boise">Boise</option>
+                <option value="SunValley">Sun Valley</option>
+              </select>
+
+              <label for="first">1st:</label>
+                    <select name="first" id="first" class="required" data-native-menu="false" data-theme="b">
+                        <option data-placeholder="true">1ST place</option>
+                       <option value="1 Ryan Villopoto">1&nbsp;Ryan&nbsp;Villopoto</option><option value="5 Ryan Dungey">5&nbsp;Ryan&nbsp;Dungey</option><option value="10 Justin Brayton">10&nbsp;Justin&nbsp;Brayton</option><option value="12 Jake Weimer">12&nbsp;Jake&nbsp;Weimer</option><option value="18 Davi Millsaps">18&nbsp;Davi&nbsp;Millsaps</option><option value="20 Broc Tickle">20&nbsp;Broc&nbsp;Tickle</option><option value="22 Chad Reed">22&nbsp;Chad&nbsp;Reed</option><option value="29 Andrew Short">29&nbsp;Andrew&nbsp;Short</option><option value="39 Robert Kiniry">39&nbsp;Robert&nbsp;Kiniry</option><option value="41 Trey Canard">41&nbsp;Trey&nbsp;Canard</option><option value="46 Weston Peick">46&nbsp;Weston&nbsp;Peick</option><option value="49 Phillip Nicoletti">49&nbsp;Phillip&nbsp;Nicoletti</option><option value="51 Justin Barcia">51&nbsp;Justin&nbsp;Barcia</option><option value="56 Kyle Regal">56&nbsp;Kyle&nbsp;Regal</option><option value="57 Ben Lamay">57&nbsp;Ben&nbsp;Lamay</option><option value="75 Josh Hill">75&nbsp;Josh&nbsp;Hill</option><option value="84 Chris Blose">84&nbsp;Chris&nbsp;Blose</option><option value="85 Kyle Partridge">85&nbsp;Kyle&nbsp;Partridge</option><option value="79 kevin Rookstool">79&nbsp;kevin&nbsp;Rookstool</option><option value="83 Austin Howell">83&nbsp;Austin&nbsp;Howell</option><option value="93 Landen Powell">93&nbsp;Landen&nbsp;Powell</option><option value="95 Tevin Tapia">95&nbsp;Tevin&nbsp;Tapia</option><option value="222 Chris Howell">222&nbsp;Chris&nbsp;Howell</option><option value="229 Jeff loop">229&nbsp;Jeff&nbsp;loop</option><option value="247 Teddy Parks">247&nbsp;Teddy&nbsp;Parks</option><option value="250 Justin Keeney">250&nbsp;Justin&nbsp;Keeney</option><option value="281 Lance Phillips">281&nbsp;Lance&nbsp;Phillips</option><option value="325 Jarred Browne">325&nbsp;Jarred&nbsp;Browne</option><option value="374 Cody Gilmore">374&nbsp;Cody&nbsp;Gilmore</option><option value="686 Daniel McCoy">686&nbsp;Daniel&nbsp;McCoy</option><option value="722 Adam Enticknap">722&nbsp;Adam&nbsp;Enticknap</option><option value="903 Antonio Balbi">903&nbsp;Antonio&nbsp;Balbi</option><option value="982 Akira Narita">982&nbsp;Akira&nbsp;Narita</option><option value="OUT">OUT</option><option value="800 Mike Alessi">800&nbsp;Mike&nbsp;Alessi</option><option value="7 James Stewart">7&nbsp;James&nbsp;Stewart</option><option value="11 Kyle Chisholm">11&nbsp;Kyle&nbsp;Chisholm</option><option value="17 Eli Tomac">17&nbsp;Eli&nbsp;Tomac</option><option value="33 Josh Grant">33&nbsp;Josh&nbsp;Grant</option><option value="42 Vince Friese">42&nbsp;Vince&nbsp;Friese</option><option value="47 Matt Lemoine">47&nbsp;Matt&nbsp;Lemoine</option><option value="54 Les Smith">54&nbsp;Les&nbsp;Smith</option><option value="55 Jimmy Albertson">55&nbsp;Jimmy&nbsp;Albertson</option><option value="60 Josh Hansen">60&nbsp;Josh&nbsp;Hansen</option><option value="62 Matt Goerke">62&nbsp;Matt&nbsp;Goerke</option><option value="64 Justin Sipes">64&nbsp;Justin&nbsp;Sipes</option><option value="69 PJ Larsen">69&nbsp;PJ&nbsp;Larsen</option>
+                    </select>
                   
+                </div><!--sx250 panel end-->
+            </div>      
 </div>
  <div id="footer">
       <div class="container">
@@ -255,26 +273,13 @@
 
 
  <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/holder/holder.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/application.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/Main.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+    $(function () {
+      $("#raceTabs a:last").tab("show");
+     
+    })
+    </script>
   </body>
 </html>
  
