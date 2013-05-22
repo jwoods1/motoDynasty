@@ -6,70 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link href="css/style.css" rel="stylesheet" >  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <link rel="stylesheet" href="jquery-ui-1.10.3.custom.min.css" />
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
     <!-- CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-
-      /* Sticky footer styles
-      -------------------------------------------------- */
-
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
-
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
-
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
-
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
-
-
-
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
-
-      #wrap > .container {
-        padding-top: 60px;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
-
-      code {
-        font-size: 80%;
-      }
-
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -82,6 +31,24 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="ico/favicon.png">
+  <style type="text/css">
+  .span2{
+    text-align: center;
+  }
+  .span2 img{
+    height: 150px;
+    width:150px
+    ;  }
+    #tabs-1{
+      padding-left: 5%;
+    }
+    #tabs-2{
+      padding-left: 5%;
+    }
+    h4{
+      text-align: center;
+    }
+  </style>
   </head>
 
   <body><!---->
@@ -101,7 +68,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="index.html">MotoDynasty</a>
+          <a class="brand" href="index.html"><b>MotoDynasty</b></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -117,14 +84,16 @@
                 <a href="profile.html">Profile</a>
               </li>
               <li class="">
-                <a href="series.html">Series</a>
+                <a href="series.html">Race</a>
               </li>
               <li class="active">
                 <a href="riders.html">Riders</a>
               </li>
               <li class="">
-                <a href="404.html">How to Play</a>
+               <a href="#myModal" data-toggle="modal">How to Play</a>
               </li>
+              <li class="">
+                <a href="store.html">Dynasty Store</a>
               <li class="">
                 <a href="404.html">Help</a>
               </li>
@@ -135,168 +104,360 @@
     
 
           </div>
+          <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Modal header</h3>
+</div>
+<div class="modal-body">
+<p>One fine body…</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+</div>
+</div>
       <!-- Begin page content -->
       <div class="container">
-        <div id="tabs" >
+        <div id="tabs" class="span11">
   <ul>
-    <li><a href="#tabs-1">Series Stats</a></li>
-    <li><a href="#tabs-2">Series</a></li>
-    <li><a href="#tabs-3">Rider Stats</a></li>
+    <li><a href="#tabs-1">450</a></li>
+    <li><a href="#tabs-2">250</a></li>
   </ul>
          <div id="tabs-1">
-          <div class="row">
-        <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
+           <div class="row">
+    <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/2%20Ryan%20Villopoto%20%282%29.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>   
+    <div class="meta">
+           
+            <h4>1 Ryan Villopoto</h4>
+            
+          </div>
     </div>
-    <div class="row">
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div><div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-    </div>
-    <div class="row">
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>  
-      <div class="span2">
-          <a href="#">          
-        <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-        </a> 
-      </div>        
-  </div>
-</div>
   
-  <div id="tabs-2">
-    <div class="row">
-     <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
-    </div>
+  
       <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
+    <img  class="img-rounded" src="img/old img/5 Ryan Dungey.jpeg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>5 Ryan Dungey</h4>
+            
+          </div>  
     </div>
+    <div class="span2"> <a href="#">          
+     <img  class="img-rounded" src="img/resized 150/12 Jake Weimer.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>12 Jake   Weimer</h4>
+            
+          </div> 
+    </div> 
       <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
+     <img  class="img-rounded" src="img/resized%20150/14%20Kevin%20Windham.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>14 Kevin Windham</h4>
+            
+          </div> 
+    </div> 
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/20%20Broc%20Tickle.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>20 Broc<br> Tickle</h4>
+            
+          </div> 
+    </div> 
     </div>
+    <div class="row"><!--Row 2-->
       <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
+    <img  class="img-rounded" src="img/resized%20150/22%20Chad%20Reed.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>22 Chad <br>Reed</h4>
+            
+          </div> 
+
+    </div>       
+      <div class="span2"> <a href="#">          
+   <img  class="img-rounded" src="img/resized%20150/29%20Andrew%20Short.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>29 Andrew Short</h4>
     </div>
   </div>
-  <div class="row">
+     
+    <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/39 Robert Kiniry.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>   
+    <div class="meta">
+           
+            <h4>39 Rober Kiniry</h4>
+            
+          </div>
+    </div>
+  
+  
+    
       <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
-    </div>
-     <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
-    </div>
+    <img  class="img-rounded" src="img/resized%20150/41 Trey Canard.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>41 Trey Canard</h4>
+            
+          </div>  
+    </div> 
       <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
-    </div>
+    <img  class="img-rounded" src="img/resized%20150/75 Josh Hill.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>75 Josh<br> Hill</h4>
+            
+          </div> 
+    </div> 
+     </div><!--row end-->
+     <div class="row"><!--Row 3-->
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/800 Mike Alessi.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>800 Mike Alessi</h4>
+            
+          </div> 
+
+    </div>       
+   
+     
     <div class="span2"> <a href="#">          
     <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
     </a>   
+    <div class="meta">
+           
+            <h4></h4>
+            
+          </div>
     </div>
-  </div>
-  <div class="row">
+  
+  
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/75%20Josh%20Hill.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4></h4>
+            
+          </div>  
+    </div>
       <div class="span2"> <a href="#">          
     <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
-    </div>
-      <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
+    </a> 
+    <div class="meta">
+           
+            <h4></h4>
+            
+          </div>  
     </div> 
       <div class="span2"> <a href="#">          
     <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
-    </div> 
-      <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-04_58949_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
+    </a>  
+    <div class="meta">
+           
+            <h4></h4>
+            
+          </div> 
     </div>       
     </div>
+</div>
+
+
+
+
+
+
+  <!-- @250 Riders-->
+  <div id="tabs-2">
+    <div class="row">
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/13%20Blake%20Wharton.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>13 Blake Wharton</h4>
+            
+          </div> 
+
+    </div> 
+     <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/15%20Dean%20Wilson.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>15 Dean Wilson</h4>
+            
+          </div> 
+    </div> 
+    <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/17%20Eli%20Tomac.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>   
+    <div class="meta">
+           
+            <h4>17 Eli <br>Tomac</h4>
+            
+          </div>
+    </div>
+     
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/19%20Wil%20Hahn.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>19 Will <br>Hahn</h4>
+            
+          </div>  
+    </div>
+  
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/21%20Jason%20Anderson.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>21 Jason Anderson</h4>
+            
+          </div>  
+    </div>
+          
+    </div>
+  <div class="row">
+    <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>   
+    <div class="meta">
+           
+            <h4>28 Tyla Rattray</h4>
+            
+          </div>
+    </div>
+  
+  
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/15%20Dean%20Wilson.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>15 Dean Wilson</h4>
+            
+          </div> 
+    </div> 
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>28 Tyla Rattray</h4>
+            
+          </div>  
+    </div> 
+    <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/13%20Blake%20Wharton.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>13 Blake Wharton</h4>
+            
+          </div> 
+
+    </div> 
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="http://dfp2hfrf3mn0u.cloudfront.net/MX_/MX_News-Seattle_2013-05_58946_jpg_1.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>28 Tyla Rattray</h4>
+            
+          </div> 
+
+    </div>       
+    </div>
+    <div class="row">
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/13%20Blake%20Wharton.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>13 Blake Wharton</h4>
+            
+          </div> 
+
+    </div> 
+   <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/15%20Dean%20Wilson.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>  
+    <div class="meta">
+           
+            <h4>15 Dean Wilson</h4>
+            
+          </div> 
+    </div> 
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/17%20Eli%20Tomac.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a>   
+    <div class="meta">
+           
+            <h4>17 Eli <br>Tomac</h4>
+            
+          </div>
+    </div>
+       <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/19%20Wil%20Hahn.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>19 Will <br>Hahn</h4>
+            
+          </div>  
+    </div>
+      <div class="span2"> <a href="#">          
+    <img  class="img-rounded" src="img/resized%20150/21%20Jason%20Anderson.jpg" alt="Ridiculousness - Salt Lake City" />       
+    </a> 
+    <div class="meta">
+           
+            <h4>21 Jason Anderson</h4>
+            
+          </div>  
+    </div>
+          
+    </div>      
+    </div>
   </div>
-  <div id="tabs-3">
-    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-  </div>
+  
   </div>
 </div>
         
 
+<div class="container">
+
+ <div id="footer">
+        <p class="muted credit">By Lyons Industries, LLC <a href="#"></a></p>
+        
+      
+    </div>
+  </div>
 </div>
 
 
 
-
-
-
-             <script src="js/jquery.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/Main.js"></script>
+ 
+ <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/bootstrap.js"></script>
   </body>
 </html>

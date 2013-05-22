@@ -6,90 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
     <!-- CSS -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-
-      /* Sticky footer styles
-      -------------------------------------------------- */
-
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
-
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
-
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
-
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
-
-
-
-      /* Custom page CSS
-      -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
-
-      #wrap > .container {
-        padding-top: 60px;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
-
-      code {
-        font-size: 80%;
-      }
-      .ui-progressbar {
-    position: relative;
-  }
-  .progress-label {
-    position: absolute;
-    left: 50%;
-    top: 4px;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 #fff;
-  }
-  #mypic{
-    position:absolute;
-    right:3%;
-    left:72%;
-    bottom:40%;
-    top:20%;
-
-  }
-  .span3 img{
-    height: 250px;
-    width:250px
-    ;  }
-
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link href="css/style.css" rel="stylesheet" >
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+ 
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+   
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -97,11 +27,7 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
+  
   </head>
 
   <body><!---->
@@ -121,7 +47,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="index.html">MotoDynasty</a>
+          <a class="brand" href="index.html"><b>MotoDynasty</b></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -137,13 +63,13 @@
                 <a href="profile.html">Profile</a>
               </li>
               <li class="">
-                <a href="series.html">Series</a>
+                <a href="series.html">Race</a>
               </li>
               <li class="">
-                <a href="404.html">Riders</a>
+                <a href="riders.html">Riders</a>
               </li>
               <li class="">
-                <a href="404.html">How to Play</a>
+               <a href="#myModal" data-toggle="modal">How to Play</a>
               </li>
               <li class="">
                 <a href="404.html">Help</a>
@@ -153,21 +79,51 @@
         </div>
       </div>
     </div>
-  
+
+  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">How To Play</h3>
+</div>
+<div class="modal-body">
+<p>This can get larger I think</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+</div>
+</div>
+
+  <div id="riderPro" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Ride Profile</h3>
+</div>
+<div class="modal-body">
+<p>This can get larger I think</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+</div>
+</div>
       <!-- Begin page content -->
       <div class="container">
-        <label>XP BAR Goes Here</label>
-        <div id="progressbar"><div class="progress-label">Loading...</div></div>
+        <div class="row">
+        <div class="span6"><p>Level 2</p></div><div class="span6" id="xp"><p>20,000<p></div>
       </div>
-      <div class="container">
+       <div class="progress progress-striped active">
+  <div class="bar" style="width: 40%;"></div>
+</div>
           <div class="row">
      <div class="span3">
-          <a href="#">          
-        <img  class="img-rounded" src="img/5 Ryan Dungey.jpeg" alt="Ridiculousness - Salt Lake City" />       
+          <a href="#riderPro" data-toggle="modal">          
+        <img  class="img-rounded" src="assets/img/resized 250/2 Ryan Villopoto (3).jpg" alt="Ridiculousness - Salt Lake City" />       
         </a> 
         <div class="meta">
             <h3>Top 450 Rider</h3>
-            <h4>5 Ryan Dungey</h4>
+            <h4>1 Ryan Villopoto</h4>
+            <h5>808 Points</h5>
           </div>
       </div>
        <div class="span3">
@@ -177,15 +133,17 @@
         <div class="meta">
             <h3>Top 250 Rider</h3>
             <h4> 28 Tyla Rattray</h4>
+            <h5>60 Points</h5>
           </div>
       </div>
        <div class="span3">
           <a href="#">          
-        <img  class="img-rounded" src="img/49 Phillip Nicoletti.jpg" alt="Ridiculousness - Salt Lake City" />       
+        <img  class="img-rounded" src="assets/img/resized 250/800 Mike Alessi.jpg" alt="Ridiculousness - Salt Lake City" />       
         </a> 
         <div class="meta">
             <h3>Dark Horse</h3>
-            <h4>49 Phillip Nicoletti</h4>
+            <h4>800 Mike Alessi</h4>
+            <h5>148 Points</h5>
             
           </div>
       </div>
@@ -197,11 +155,19 @@
   <div class="span3">
     <div class="meta">
           <a href="#">          
-        <img  class="img-rounded" src="img/Craigpix.jpg" alt="Ridiculousness - Salt Lake City" />       
+        <img  class="img-rounded" src="assets/img/old img/Craigpix.jpg" alt="Ridiculousness - Salt Lake City" />       
         </a> 
-        <div class="meta">
+        <div class="meta" id="profileStats">
             <h3>Craig Lyons</h3>
-              <span class="date"> Date Joined May 10, 2013</span>
+            <p><b>From:</b> Sun Valley, ID</p>
+            <p><b>Level:</b> 2<p>
+            <p><b>Total XP</b>: 10806</p>
+            <p><b>Championships:</b> 1</p>
+            <p><b>Race Wins:</b> 8</p>
+            <p><b>AVG Score: </b>360.2</p>
+            <p><b>Top Score:</b> 521</p>
+            <p><b>Challenge Wins:</b> 0</p>
+              
            
             
 
@@ -210,13 +176,15 @@
       </div>
       </div>
       </div>
-      </div>
-      <div class="container">
-<div id="tabs">
+      
+
+  <div class="row" id="tabPanel" >
+<div id="tabs" class="span9">
   <ul>
-    <li><a href="#tabs-1">Nunc tincidunt</a></li>
-    <li><a href="#tabs-2">Proin dolor</a></li>
-    <li><a href="#tabs-3">Aenean lacinia</a></li>
+    <li><a href="#tabs-1">Bio</a></li>
+    <li><a href="#tabs-2">Stats</a></li>
+    <li><a href="#tabs-3">Current Race</a></li>
+    <li><a href="#tabs-4">iSupport</a></li>
   </ul>
   <div id="tabs-1">
     <p><strong>Click this tab again to close the content pane.</strong></p>
@@ -230,31 +198,32 @@
     <p><strong>Click this tab again to close the content pane.</strong></p>
     <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
   </div>
+  <div id="tabs-4">
+    <p><strong>Click this tab again to close the content pane.</strong></p>
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
 </div>
+
 </div>
-  
+
+
 </div>
+<div class="container">
+
+ <div id="footer">
+        <p class="muted credit">By Lyons Industries, LLC <a href="#"></a></p>
+        
+      
+    </div>
+  </div>
+ 
+</div>
+ 
 
 
 
 
-    <script src="js/jquery.js"></script>
-   
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/Main.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
