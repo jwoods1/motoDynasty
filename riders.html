@@ -7,18 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-   <link href="css/style.css" rel="stylesheet" >  
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   
-  <script>
-  $(function() {
-    $( "#tabs" ).tabs();
-  });
-  </script>
-    <!-- CSS -->
-    <link href="style.css" rel="stylesheet">
+  
+ 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,37 +18,23 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
+    
   <style type="text/css">
-  .span2{
-    text-align: center;
-  }
+ 
   .span2 img{
     height: 150px;
-    width:150px
-    ;  }
-    #tabs-1{
-      padding-left: 5%;
-    }
-    #tabs-2{
-      padding-left: 5%;
-    }
-    h4{
-      text-align: center;
-    }
+    width:150px;  }
+   
+    
   </style>
   </head>
 
   <body><!---->
 
     <!-- Part 1: Wr ap all page content here -->
-    <div id="wrap">
+<div id="wrap">
 
-      <!-- Fixed navbar -->
+ 
      
 
       <!-- Fixed navbar -->
@@ -103,7 +81,7 @@
       </div>
     
 
-          </div>
+    </div>
           <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-header">
 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -118,26 +96,36 @@
 </div>
 </div>
       <!-- Begin page content -->
-      <div class="container">
-        <div id="tabs" class="span11">
-  <ul>
-    <li><a href="#tabs-1">450</a></li>
-    <li><a href="#tabs-2">250</a></li>
-  </ul>
-         <div id="tabs-1">
-           <div class="row">
-    <div class="span2"> <a href="#">          
-    <img  class="img-rounded" src="img/resized%20150/2%20Ryan%20Villopoto%20%282%29.jpg" alt="Ridiculousness - Salt Lake City" />       
-    </a>   
-    <div class="meta">
-           
-            <h4>1 Ryan Villopoto</h4>
+     
+
+  <!-- Tabs
+        ================================================== -->
+       <div class="container">
+        <section id="tabs">
+          <div class="page-header">
             
           </div>
-    </div>
+          <div class="bs-docs-example">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#r450" data-toggle="tab">450</a></li>
+              <li><a href="#r250" data-toggle="tab">250</a></li>
+            </ul>
+          </div>
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="r450">
+       <div class="row">
+          <div class="span2"> <a href="#">          
+            <img  class="img-rounded" src="img/resized%20150/2%20Ryan%20Villopoto%20%282%29.jpg" alt="Ridiculousness - Salt Lake City" />       
+            </a>   
+            <div class="meta">
+                   
+                    <h4>1 Ryan Villopoto</h4>
+                    
+                  </div>
+          </div>
   
   
-      <div class="span2"> <a href="#">          
+  <div class="span2"> <a href="#">          
     <img  class="img-rounded" src="img/old img/5 Ryan Dungey.jpeg" alt="Ridiculousness - Salt Lake City" />       
     </a> 
     <div class="meta">
@@ -145,7 +133,7 @@
             <h4>5 Ryan Dungey</h4>
             
           </div>  
-    </div>
+    </div>    
     <div class="span2"> <a href="#">          
      <img  class="img-rounded" src="img/resized 150/12 Jake Weimer.jpg" alt="Ridiculousness - Salt Lake City" />       
     </a>  
@@ -194,7 +182,7 @@
     </div>
   </div>
      
-    <div class="span2"> <a href="#">          
+ <div class="span2"> <a href="#">          
     <img  class="img-rounded" src="img/resized%20150/39 Robert Kiniry.jpg" alt="Ridiculousness - Salt Lake City" />       
     </a>   
     <div class="meta">
@@ -277,17 +265,10 @@
           </div> 
     </div>       
     </div>
-</div>
-
-
-
-
-
-
-  <!-- @250 Riders-->
-  <div id="tabs-2">
-    <div class="row">
-      <div class="span2"> <a href="#">          
+              </div>
+<div class="tab-pane fade" id="r250">
+                 <div class="row">
+<div class="span2"> <a href="#">          
     <img  class="img-rounded" src="img/resized%20150/13%20Blake%20Wharton.jpg" alt="Ridiculousness - Salt Lake City" />       
     </a>  
     <div class="meta">
@@ -436,14 +417,15 @@
           </div>  
     </div>
           
-    </div>      
-    </div>
+    </div>  <!--row-->    
+    
+          
+             
+            </div><!--Tab-->
+          </div><!--Tab all Content-->
   </div>
-  
-  </div>
+    
 </div>
-        
-
 <div class="container">
 
  <div id="footer">
@@ -452,7 +434,7 @@
       
     </div>
   </div>
-</div>
+
 
 
 
